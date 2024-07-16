@@ -76,7 +76,8 @@ body{
 .social-header a {
     text-decoration: none;
     font-size: 1.3em;
-    font-weight: 600;
+    font-weight: 500;
+    transition: ease-in-out 0.3s;
 }
 
 .social-header {
@@ -88,9 +89,13 @@ body{
     margin-top: 10%;
 }
 
-.social-header a {
+.header .menu-header .links-header ul li a:hover{
+    color: #e55634;
+}
+
+.social-header a  {
     font-size: 2em;
-    transition: ease-in-out 0.3s;
+
 }
 
 .social-header a:hover, i:hover {
