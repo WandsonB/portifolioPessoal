@@ -1,29 +1,37 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: content-box;
     color: #c89872;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
 }
 
-/* :root{
-    
-} */
+:root{
+    /* ::-webkit-scrollbar{
+        display: none;
+    } */
+}
 
 body{
     background-color: antiquewhite;
     width: 100%;
     height: 100vh;
-    font-size: 16px;
+    font-size: 10px;
+    /* overflow: hidden; */
 }
 
 .header{
     background-color: #172228;
-    width: 20%;
+    width: 25%;
     height: 100%;
     max-width: 640px;
     min-width: 400px;
     font-size: 1.6em;
+    position: absolute;
+    top: 0;
+    left:0;
+    
 }
 
 .header .section-img{
@@ -43,6 +51,8 @@ body{
 
 .header h1{
     text-align: center;
+    font-size: 2.5em;
+
 }
 
 .header .menu-header {
@@ -75,9 +85,9 @@ body{
 .header .menu-header .links-header ul li a,
 .social-header a {
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 2em;
     font-weight: 500;
-    transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.2s;
 }
 
 .social-header {
@@ -87,17 +97,95 @@ body{
     justify-content: space-evenly;
     align-items: center;
     margin-top: 10%;
+    
 }
 
-.header .menu-header .links-header ul li a:hover{
-    color: #e55634;
+.social-header a, i {
+font-size: 1.8em;
 }
 
-.social-header a  {
-    font-size: 2em;
-
-}
-
+.header .menu-header .links-header ul li a:hover,
 .social-header a:hover, i:hover {
     color: #e55634;
 }
+
+
+/* Inicio */
+
+.main-Content{
+    width: 75%;
+    height: 100vh;
+    background-color: #073f5d;
+    position: absolute;
+    top: 0;
+    right: 0%;
+    overflow-y: visible;
+}
+
+.slider-apresentation{
+    width: 100%;
+    height: 100vh;
+    background-color: #073f5d;
+    position: absolute;
+    top: 0;
+    right: 0%;
+}
+
+.title-slider{
+    position: relative;
+    top:30%;
+    left: 10%;
+}
+
+.title-slider .h1-slider{
+    font-size: 2em;  
+}
+
+.decription-section{
+    position: relative;
+    top: 35%;
+    left: 20%;
+    width: 40%;
+    height: auto;
+}
+.decription-section .introduction-slider{
+    font-size: 1em;
+    font-weight: 500;
+    width: 80%;
+    text-align: justify;
+}
+
+.btn1-Slider {
+    background-color: #1D719D; /* Verde */
+    border: none;
+    border-radius: 0.7em;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; 
+  
+    margin: 10px 2px;
+    cursor: pointer; 
+
+    transition: all 0.2s ease-in-out;
+  
+  }
+
+  .btn1-Slider:hover {
+    background-color: #30a5e4; 
+    transform: scale(1.1);
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.3);
+  }
+
+  .section-Project{
+    width: 60%;
+    height: 100vh;
+    background-color: #62DAFC;
+    position: static;
+    top: 0;
+    right: 0%;
+    overflow: auto;
+    z-index: 1;
+  }
